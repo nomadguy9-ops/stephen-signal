@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stephen Signal</title>
+  <script>
+    // Prevent audio autoplay blocking
+    window.addEventListener('click', () => {
+      const audio = document.getElementById('bg-audio');
+      if (audio && audio.paused) audio.play();
+    });
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-mono text-center p-6">
+  <audio id="bg-audio" autoplay loop>
+    <source src="/ambient_background.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>  <div class="max-w-2xl mx-auto space-y-6">
+    <h1 class="text-xl md:text-3xl font-bold">The brush knows what the mind fears.</h1><div class="grid grid-cols-2 gap-4">
+  <img src="/art1.jpg" alt="Artwork 1" class="rounded-xl shadow-lg" />
+  <img src="/art2.jpg" alt="Artwork 2" class="rounded-xl shadow-lg" />
+  <img src="/art3.jpg" alt="Artwork 3" class="rounded-xl shadow-lg" />
+  <img src="/art4.jpg" alt="Artwork 4" class="rounded-xl shadow-lg" />
+</div>
+
+<p class="italic text-lg">"I couldn't breathe for a moment. I just stared."</p>
+<p class="italic text-lg">"You were never supposed to find this. But now that you have... everything changes."</p>
+
+<button onclick="location.href='/next.html'" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300">Continue</button>
+
+  </div>
+</body>
+</html>
